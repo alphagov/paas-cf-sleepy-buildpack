@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-echo "Sleeping for $SLEEPY_TIME seconds..."
+echo "Having happy sleepy times for $SLEEPY_TIME seconds..."
 sleep "$SLEEPY_TIME"
 exit 0
