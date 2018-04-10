@@ -3,5 +3,5 @@
 cat <<EOF
 ---
 default_process_types:
-  web: python -m SimpleHTTPServer 8080
+  web: while true; do echo -en "HTTP/1.1 200 OK\n\nOK" | nc -l 8080; done
 EOF
