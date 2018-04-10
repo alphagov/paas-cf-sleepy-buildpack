@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-echo "Printing env during compile..."
-env
-
 echo "Sleeping for $SLEEPY_TIME seconds..."
 sleep "$SLEEPY_TIME"
 exit 0

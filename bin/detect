@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
 
-echo "Printing env during detect..."
-env
-
 echo "No-op detection process"
 exit 0
