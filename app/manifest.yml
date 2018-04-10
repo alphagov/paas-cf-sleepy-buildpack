@@ -1,0 +1,6 @@
+---
+applications:
+ - name: sleepy-app
+   buildpack: https://github.com/henrytk/cf-sleepy-buildpack
+   env:
+     SLEEPY_TIME: 60
