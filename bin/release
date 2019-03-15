@@ -3,5 +3,5 @@
 cat <<EOF
 ---
 default_process_types:
-  web: while true; do echo -en "HTTP/1.1 200 OK\n\nOK" | nc -l 8080; done
+  web: mkdir empty-dir && cd empty-dir && echo -n OK >index.html && python -m SimpleHTTPServer 8080
 EOF
