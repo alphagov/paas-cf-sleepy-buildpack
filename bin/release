@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
 
-cat <<EOF
+if [ $CF_STACK == "cflinuxfs4" ]; then
+  cat <<EOF
+---
+default_process_types:
+  web: mkdir empty-dir && cd empty-dir && echo -n OK >index.html && python3 -m http.server 8080
+EOF
+else
+  cat <<EOF
 ---
 default_process_types:
   web: mkdir empty-dir && cd empty-dir && echo -n OK >index.html && python -m SimpleHTTPServer 8080
 EOF
+fi
